@@ -2,6 +2,9 @@
 
 This is a repository for the "odin-recipes" project, a part of [The Odin Project](https://www.theodinproject.com) curriculum. In this project, you will create a simple website using HTML where you can showcase your favorite recipes.
 
+## Demo 
+[click Here to view the Project](https://yogesh0808.github.io/odin-recipes/)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
