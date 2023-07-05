@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+        body {
+            background-color: #F1FAEE;
+        }
+        #h1 {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        #food {
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 20px;
+            margin-right: 30px;
+        }
+        h1 {
+            height: 50px;
+            color: #071108;
+            text-align: center;
+            font-family: 'Belanosima', sans-serif;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        h1:hover {
+            transform: scale(1.1);
+            text-decoration: overline;
+
+        }
+        p {
+            font-family: 'Poppins', sans-serif;
+            color: #1D3557;
+        }
+        #sec1 {
+            margin-bottom: 50px;
+        }
+        #sec2 {
+            height: 650px;    
+            box-shadow: 0 5px 20px #afafaf;
+            margin: 0;
+            left: 0;
+            right: 0;
+        }
+        .wrapper {
+            background: url('https://images.unsplash.com/photo-1505682750263-f3f9e519c565?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            min-height: 100vh;
+
+           
+        }
+        .wrapper img {
+            width: 390px;
+            height: 650px;
+            border-radius: 15px;
+            box-shadow: 5px 0 25px black;
+        }
+
+        .recipe {
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .recipe:hover .overlay {
+            opacity: 1;
+        }
+
+        .recipe-title {
+            color: #fff;
+            font-family: 'Mate SC', serif;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px;
+            z-index: 2;
+        }
+
+        .recipe-p {
+            color: #fff;
+            margin: 15px;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?export=download&id=1T36Az80jrTvbBbnnWpBSXiT2Vt3S2s5I">
+    <title>Odin-recipes</title>
+</head>
+<body> 
+    <section id="sec1">
+    <h1>ODIN-RECIPE <img src="resources/hamburger.png" id="h1"> </h1> 
+    <img src="https://drive.google.com/uc?export=download&id=1pKQU_NGOFNZZ7RaJRUBxky3arqpl8A_l" id="food">
+    <p>Welcome to Odin Recipes, your go-to destination for mouthwatering culinary delights. Prepare to embark on a culinary adventure as we present three delectable recipes that will tantalize your taste buds and ignite your passion for cooking.
+        <br><br>
+        First on our list is the heavenly "Mango Lassi Smoothie." Made with ripe mangoes, creamy yogurt, and a dash of aromatic spices, this refreshing beverage is perfect for hot summer days or as a delightful treat any time of the year.
+        <br>
+        Next up, we have the "Spicy Chicken Curry." This aromatic and flavorful dish combines succulent chicken pieces with a medley of spices, herbs, and a rich tomato-based gravy. Serve it with steamed rice or warm naan bread for a truly satisfying meal that will transport you to the vibrant streets of India.
+        
+        And finally, get ready to indulge in the decadent "Triple Chocolate Brownies." These fudgy, chocolatey delights are a chocolate lover's dream come true. Packed with dark, milk, and white chocolate, every bite is a heavenly experience that will leave you craving for more.
+        
+        Whether you're a seasoned chef or just starting your culinary journey, these recipes are designed to be approachable and enjoyable for everyone. So, gather your ingredients, put on your apron, and get ready to create magic in your kitchen with Odin Recipes.
+        <br>
+        <br>
+        <b>Note:</b> Make sure to create separate webpages for each recipe, providing detailed instructions, ingredients, and any additional information necessary to recreate the recipes.</p>
+    </section>
+        <section id="sec2">
+        <div class="wrapper">
+            <div class="recipe">
+                <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="overlay">
+                    <h3 class="recipe-title">Basil Chicken</h3>
+                    <p class="recipe-p">A flavorful and aromatic Thai dish made with ground chicken, basil leaves, and a combination of spicy and savory sauces.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <a href=""><img src="https://images.unsplash.com/photo-1613564834361-9436948817d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3026&q=80"></a>
+                <div class="overlay">
+                    <h3 class="recipe-title">Margerita Chicken</h3>
+                    <p class="recipe-p">A classic and delicious pizza topped with fresh tomatoes, mozzarella cheese, basil leaves, and a drizzle of olive oil.</p>
+                </div>
+            </div>
+            <div class="recipe">
+                <a href=""><img src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop"></a>
+                <div class="overlay">
+                    <h3 class="recipe-title">Lava Cake</h3>
+                    <p class="recipe-p">A flavorful and aromatic Thai dish made with ground chicken, basil leaves, and a combination of spicy and savory sauces.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+</html>
